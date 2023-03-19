@@ -1,0 +1,78 @@
+.order-dish-card {
+	width: 246px;
+	height: 80px;
+	background: #f9f4ea;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.order-dish-card .dish-img {
+	width: 96px;
+	height: 100%;
+	object-fit: cover;
+}
+
+.order-dish-card .order-dish-content {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px 0 0;
+	gap: 5px;
+}
+
+.order-dish-card .name-and-count {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+.order-dish-card .dish-counter {
+	color: #de9200;
+	font-weight: 600;
+	line-height: 18px;
+	border: 0.5px solid #979797;
+	border-radius: 5px;
+	width: 20px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.order-dish-card .dish-name {
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0;
+}
+.order-dish-card .price {
+	align-self: flex-end;
+	color: #de9200;
+	font-weight: 600;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.order-dish-card .name-and-price {
+	display: flex;
+	flex-direction: column;
+}
+
+.order-dish-card .sides-and-changes {
+	display: flex;
+	flex-direction: row;
+	font-size: 12px;
+	gap: 5px;
+	align-items: center;
+}
+
+.order-dish-card .order-dish-content .sides-and-changes hr {
+	width: 0;
+	height: 75%;
+	border: 0.5px solid #979797;
+}
+
+.order-dish-card .total-dishes-price {
+	text-align: end;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 18px;
+}

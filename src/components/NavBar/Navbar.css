@@ -1,0 +1,121 @@
+.navbar {
+	width: 100vw;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 64px;
+	align-items: center;
+	border-bottom: 1px solid #979797;
+	padding: 0 50px;
+	background-color: white;
+	border: 0;
+	z-index: 1;
+}
+
+.navbar button {
+	background-color: transparent;
+	border: 0;
+}
+button:hover,
+.mobile-logo {
+	cursor: pointer;
+}
+
+.navbar-left-side,
+.navbar-right-side {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo {
+	background-image: url(../../assets/logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 33px;
+	width: 162px;
+}
+
+.user,
+.bag {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 20px;
+	height: 20px;
+}
+.not-on-page {
+	border: 0;
+	all: unset;
+	cursor: pointer;
+}
+.on-page {
+	border-bottom: 3px solid #f5be00;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.user {
+	background-image: url(../../assets/icons/user.svg);
+}
+.bag {
+	background-image: url(../../assets/icons/bag.svg);
+}
+
+.search-input {
+	all: unset;
+	text-align: start;
+	width: 24px;
+	height: 30px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: white;
+	background-image: url(../../assets/icons/search.svg);
+	background-position: right;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	padding: 0px 40px 0px 10px;
+	transition: width 0.4s ease-out;
+	-webkit-transition: width 0.4s ease-out;
+	font-size: 18px;
+}
+
+.search-input:hover {
+	cursor: pointer;
+}
+
+.search-input:focus {
+	background-position: 99%;
+	width: 300px;
+	border: 0.5px black solid;
+}
+
+.search-input::placeholder {
+	font-size: 18px;
+}
+.mobile-nav,
+.mobile-logo,
+.navbar .menu {
+	display: none;
+}
+
+@media only screen and (max-width: 690px) {
+	.navbar-left-side {
+		display: none;
+	}
+	.mobile-nav,
+	.navbar .menu {
+		display: flex;
+	}
+	.mobile-logo {
+		display: flex;
+	}
+	.navbar {
+		padding: 0 25px;
+	}
+}

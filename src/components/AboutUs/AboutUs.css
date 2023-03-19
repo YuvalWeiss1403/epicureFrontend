@@ -1,0 +1,89 @@
+.About-us {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	background-color: #fafafa;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+.about-us-Heading {
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.about-us-content-download {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.content {
+	width: 95%;
+	letter-spacing: 2.14px;
+}
+
+.logo-img {
+	display: flex;
+	justify-content: right;
+	width: 40%;
+	padding-right: 45px;
+}
+
+.about-logo {
+	width: 30%;
+	object-fit: contain;
+}
+.download {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.download-apple {
+	background-image: url(../../assets/apple-icon.svg);
+}
+.download-android {
+	background-image: url(../../assets/googleplay-icon.svg);
+}
+
+.download-apple,
+.download-android {
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-position: 5px;
+	border-radius: 10px;
+	border: 0.5px black solid;
+	padding-left: 35px;
+	text-align: center;
+	font-weight: 600;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.download-heading {
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+	.About-us {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+	.about-us-content-download {
+		flex-direction: column-reverse;
+	}
+	.logo-img {
+		justify-content: flex-start;
+	}
+	.about-logo {
+		width: 50%;
+	}
+	.download {
+		flex-direction: column;
+		max-width: 140px;
+	}
+}

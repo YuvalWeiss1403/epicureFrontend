@@ -1,0 +1,141 @@
+.my-modal {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.modal-content {
+	font-family: "Helvetica Neue Thin";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 440px;
+	background-color: #f9f4ea;
+	height: 90vh;
+	overflow: scroll;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 15px;
+}
+.modal-content #my-modal-card {
+	width: 100%;
+	height: 100%;
+}
+#my-modal-card .dish-img {
+	width: 441px;
+	object-fit: cover;
+	height: 200px;
+}
+.modal-content .dish-name {
+	padding: 15px 5px 10px 5px;
+	font-weight: 600;
+	font-size: 25px;
+}
+.modal-content .dish-description {
+	width: 50%;
+	padding: 9px 0px 0px 0px;
+	height: auto;
+}
+
+.modal-content .price hr {
+	width: 10%;
+	height: 0px;
+	border: 0.5px solid #979797;
+	margin: 10px;
+}
+.modal-content .price {
+	align-items: center;
+	justify-content: center;
+}
+.choose-side-heading,
+.choose-changes-heading,
+.quantity-heading {
+	text-align: center;
+	border-bottom: 3px solid #f5be00;
+}
+
+.changes-content,
+.sides-content,
+.sides,
+.changes {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.close-button {
+	cursor: pointer;
+	position: absolute;
+	background-color: transparent;
+	border: 0;
+	font-size: 40px;
+	color: white;
+	left: 20%;
+	top: -1%;
+}
+.close-button:hover {
+	color: gray;
+}
+
+.add-remove-quantity-container {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.add-remove-quantity-container button {
+	background-color: transparent;
+	border: 0;
+	font-size: 30px;
+}
+
+.modal-content .add-to-cart-button {
+	background-color: black;
+	color: white;
+	border: 0;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	width: 150px;
+	font-weight: 600;
+	padding: 10px 0px;
+}
+
+.delete-dish {
+	position: absolute;
+	top: 210px;
+	left: 5px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue light";
+	border: 0;
+	background-color: #ad6060b5;
+	color: white;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 1.67px;
+	text-transform: uppercase;
+	height: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+	.my-modal {
+		background-color: #f9f4ea;
+	}
+	.close-button {
+		color: black;
+		top: 0;
+		left: 0;
+		font-size: 30px;
+	}
+}

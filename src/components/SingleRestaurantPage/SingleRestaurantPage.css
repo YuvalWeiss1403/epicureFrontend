@@ -1,0 +1,165 @@
+.single-rest-page {
+	width: 100%;
+}
+.single-rest-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.delete-rest {
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue light";
+	border: 0;
+	background-color: #ad6060b5;
+	color: white;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 1.67px;
+	text-transform: uppercase;
+	height: 30px;
+}
+.add-dish {
+	position: absolute;
+	top: 105px;
+	left: 5px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue light";
+	border: 0;
+	background-color: #ad6060b5;
+	color: white;
+	font-size: 9px;
+	line-height: 20px;
+	letter-spacing: 1.65px;
+	text-transform: uppercase;
+	height: 30px;
+}
+
+.delete-rest:hover {
+	cursor: pointer;
+}
+.delete-rest:active {
+	box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+}
+
+.single-rest-container .rest-img {
+	width: 80%;
+	object-fit: cover;
+	padding-bottom: 20px;
+	height: 295px;
+}
+.single-rest-container .rest-name {
+	font-family: "Helvetica Neue Light";
+	letter-spacing: 2.67px;
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.single-rest-container .chef-name {
+	font-family: "Helvetica Neue Thin";
+	letter-spacing: 2.67px;
+	padding-bottom: 15px;
+}
+
+.single-rest-container .is-open {
+	background-image: url("../../assets/clock-ICon.svg");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 20px;
+}
+
+.single-rest-container .dishes-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	align-items: center;
+	padding-bottom: 30px;
+	gap: 10px;
+}
+
+.single-rest-container .dishes-container #single-rest-page-card {
+	width: 170px;
+	height: 285px;
+	min-width: 150px;
+}
+
+.single-rest-container
+	.dishes-container
+	#single-rest-page-card
+	.dish-description {
+	height: 127px;
+}
+
+.single-rest-container .dishes-container #single-rest-page-card .dish-name {
+	padding: 10px 5px 0px 5px;
+}
+
+.confirm-delete-modal {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+.delete-modal-content {
+	font-family: "Helvetica Neue Thin";
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 315px;
+	background-color: #f9f4ea;
+	overflow: scroll;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 15px;
+	padding: 10px;
+}
+
+.confirm-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+.delete-modal-header {
+	font-size: 20px;
+	font-family: "Helvetica Neue Light";
+}
+.confirm-delete {
+	border: 0;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2.67px;
+	text-transform: uppercase;
+	width: 110px;
+	height: 30px;
+}
+
+.cancel-delete {
+	border: 0.5px solid black;
+	background-color: transparent;
+	color: black;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2.67px;
+	text-transform: uppercase;
+	width: 110px;
+	height: 30px;
+}
+
+@media only screen and (max-width: 640px) {
+	.single-rest-container .dishes-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

@@ -1,0 +1,149 @@
+.restaurants-filter-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+	background-color: #fafafa;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.restaurants-filter-bar .filter {
+	height: 30px;
+	border: 0;
+	width: 90px;
+	background-color: transparent;
+	background-image: url("../../assets/dropdownArrow.svg");
+	background-repeat: no-repeat;
+	background-position: 75px;
+	padding-right: 15px;
+	background-size: 10px;
+}
+
+.filter:hover {
+	cursor: pointer;
+	color: #959599;
+}
+
+.price-modal,
+.rating-modal,
+.distance-modal {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.price-thumb-heading {
+	font-family: "Helvetica Neue Light";
+}
+.price-modal {
+	background-color: white;
+	width: 205px;
+	top: 199px;
+	left: 30%;
+	padding: 10px;
+	gap: 10px;
+}
+.price-slider-container {
+	background-color: #f9f4ea;
+	width: 195px;
+	padding: 5px;
+	height: 45px;
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.price-heading {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 1.92px;
+}
+.price-range-heading {
+	font-weight: 400;
+	font-size: 10px;
+}
+.distance-modal {
+	background-color: #f9f4ea;
+	width: 153px;
+	height: 80px;
+	top: 199px;
+	left: 40%;
+}
+
+.rating-modal {
+	padding: 10px;
+	top: 199px;
+	left: 50%;
+	width: 130px;
+	gap: 5px;
+}
+
+.rating-modal ul {
+	gap: 5px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	align-self: flex-start;
+}
+.rating-modal ul :checked:hover {
+	cursor: pointer;
+}
+
+.rating-modal ul input[type="checkbox"] {
+	cursor: pointer;
+}
+.rating-modal ul img {
+	width: 65%;
+}
+
+.price-slider {
+	width: 85%;
+	max-width: 500px;
+}
+.price-slider-thumb {
+	cursor: pointer;
+	z-index: 100;
+	background: black;
+	border: 5px solid black;
+	border-radius: 100%;
+	display: block;
+	box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.price-slider-thumb:active {
+	background-color: #959599;
+}
+.price-tracker {
+	position: relative;
+	background: #959599;
+}
+.price-tracker .price-tracker-0 {
+	background: #959599;
+}
+.price-slider .price-tracker {
+	height: 4px;
+}
+.price-slider .price-slider-thumb {
+	bottom: -10px;
+	width: 5px;
+	outline: none;
+	height: 5px;
+	font-size: 12px;
+	line-height: 38px;
+}
+
+#filter-on {
+	background-color: #d0cfcf;
+}
+#filter-off {
+	background-color: transparent;
+}
+@media only screen and (max-width: 640px) {
+	.restaurants-filter-bar {
+		flex-direction: column;
+	}
+}

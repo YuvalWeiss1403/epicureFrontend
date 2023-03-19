@@ -1,0 +1,63 @@
+.dish-card-element {
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f4ea;
+	align-items: center;
+	width: 220px;
+	height: 320px;
+	min-width: 200px;
+}
+.dish-card-element:hover {
+	cursor: pointer;
+}
+.dish-img {
+	width: 100%;
+	object-fit: contain;
+}
+.dish-name {
+	font-family: "Helvetica Neue Light";
+	letter-spacing: 2.67px;
+	font-size: 1.25rem;
+	text-align: center;
+	padding: 10px 5px 6px 5px;
+}
+
+.dish-description {
+	letter-spacing: 1.97px;
+	text-align: center;
+	padding: 10px;
+	font-size: 14px;
+	height: 125px;
+	font-family: "Helvetica Neue Thin";
+	overflow: scroll;
+}
+
+.dishTypes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15px;
+	align-items: center;
+}
+
+.dish-type-img {
+	width: 30px;
+	height: 30px;
+	object-fit: contain;
+}
+
+.price {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.price hr {
+	width: 30%;
+	height: 0px;
+	border: 0.5px solid #979797;
+	align-items: center;
+}
+
+.price .price-value {
+	padding: 0px 5px;
+}

@@ -1,0 +1,31 @@
+.rest-card-element {
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f4ea;
+	align-items: center;
+	width: 200px;
+	min-width: 160px;
+}
+.rest-card-element:hover {
+	cursor: pointer;
+}
+.dish-img {
+	width: 100%;
+	object-fit: contain;
+}
+.rest-name {
+	font-family: "Helvetica Neue Light";
+	letter-spacing: 2.67px;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.rest-chef-name {
+	letter-spacing: 1.97px;
+	font-family: "Helvetica Neue Thin";
+}
+
+.stars {
+	width: 55%;
+	object-fit: contain;
+}

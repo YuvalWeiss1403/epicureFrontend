@@ -1,0 +1,5 @@
+.go-back-on {
+	cursor: not-allowed;
+	pointer-events: none;
+	color: lightgrey;
+}

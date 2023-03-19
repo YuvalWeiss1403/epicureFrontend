@@ -1,0 +1,26 @@
+.restaurants-navbar {
+	display: flex;
+	flex-direction: row;
+	padding: 35px 10px;
+	gap: 25px;
+	justify-content: center;
+}
+
+.restaurants-navbar button {
+	border: 0;
+	background-color: transparent;
+}
+.restaurants-navbar .filter-on {
+	font-weight: 600;
+	border-bottom: 3px solid #f5be00;
+}
+.restaurants-navbar .filter-off {
+	font-weight: 200;
+}
+
+@media only screen and (max-width: 640px) {
+	.restaurants-navbar {
+		overflow: scroll;
+		padding-left: 30%;
+	}
+}

@@ -1,0 +1,54 @@
+.single-chef-page {
+	width: 100%;
+}
+
+.single-chef-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.chef-img {
+	width: 80%;
+	object-fit: contain;
+	padding-bottom: 20px;
+	height: 295px;
+}
+.chef-name {
+	font-family: "Helvetica Neue Light";
+	letter-spacing: 2.67px;
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.about-chef {
+	font-family: "Helvetica Neue Thin";
+	letter-spacing: 2.67px;
+	padding: 20px;
+	text-align: center;
+}
+.rests-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	align-items: center;
+	padding-bottom: 30px;
+	gap: 10px;
+}
+
+.delete-chef {
+	position: absolute;
+	top: 70px;
+	left: 5px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue light";
+	border: 0;
+	background-color: #ad6060b5;
+	color: white;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 1.67px;
+	text-transform: uppercase;
+	height: 30px;
+}

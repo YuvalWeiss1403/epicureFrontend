@@ -1,0 +1,34 @@
+.restaurants-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	min-height: 50vh;
+}
+
+.restaurants-container .rest-card-element {
+	width: 220px;
+	margin-bottom: 10px;
+}
+.add-rest {
+	position: absolute;
+	top: 105px;
+	left: 25px;
+	border-radius: 3px;
+	font-family: "Helvetica Neue light";
+	border: 0;
+	background-color: #ad6060b5;
+	color: white;
+	font-size: 9px;
+	line-height: 20px;
+	letter-spacing: 1.65px;
+	text-transform: uppercase;
+	height: 30px;
+}
+@media only screen and (max-width: 680px) {
+	.restaurants-container {
+		padding: 0;
+		grid-template-columns: repeat(1, 1fr);
+		overflow: scroll;
+	}
+}

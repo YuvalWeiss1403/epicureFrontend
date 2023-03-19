@@ -1,0 +1,131 @@
+[
+	{
+		"name": "Asaf Granit",
+		"portrait": "/assets/Chefs/asafGranit.svg",
+		"isChefOfTheWeek": false,
+		"isChefNew": true,
+		"about": "",
+		"restaurants": [
+			{
+				"name": "Shkedei Bavel",
+				"img": "/assets/restaurants/claro.svg",
+				"dishes": [
+					{
+						"name": "Roasted Chicken",
+						"ingredients": "Chicken, Salt, Pepper, Olive Oil",
+						"price": 20,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": true,
+						"type": ["spicy", "vegan"]
+					},
+					{
+						"name": "Mushroom Risotto",
+						"ingredients": "Arborio Rice, Mushrooms, Parmesan Cheese, Butter, White Wine",
+						"price": 18,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": []
+					},
+					{
+						"name": "Chocolate Mousse",
+						"ingredients": "Dark Chocolate, Heavy Cream, Sugar, Eggs",
+						"price": 10,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": ["spicy"]
+					},
+					{
+						"name": "Tomato Soup",
+						"ingredients": "Tomatoes, Onion, Garlic, Chicken Broth, Heavy Cream",
+						"price": 12,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": ["vegan"]
+					}
+				],
+				"hours": 12,
+				"rating": 5,
+				"isChefNew": false,
+				"address": "Mikve Israel St 8, Tel Aviv-Yafo"
+			}
+		]
+	},
+	{
+		"name": "Yosi Shitrit",
+		"portrait": "/assets/Chefs/yossiShitrit.svg",
+		"isChefOfTheWeek": true,
+		"isChefNew": false,
+		"about": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
+		"restaurants": [
+			{
+				"name": "Shitrit's Kitchen",
+				"img": "/assets/restaurants/claro.svg",
+				"dishes": [
+					{
+						"name": "Beef Tenderloin with Red Wine Sauce",
+						"ingredients": "Beef Tenderloin, Red Wine, Garlic, Shallots, Butter, Thyme, Salt, Pepper",
+						"price": 23,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": true,
+						"type": []
+					},
+					{
+						"name": "Pesto Pasta with Grilled Chicken",
+						"ingredients": "Penne Pasta, Pesto, Grilled Chicken, Parmesan Cheese, Cherry Tomatoes, Basil",
+						"price": 18,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": ["vegan"]
+					},
+					{
+						"name": "Crab Cakes with Lemon Aioli",
+						"ingredients": "Crab Meat, Breadcrumbs, Mayonnaise, Lemon Juice, Garlic, Old Bay Seasoning, Parsley, Eggs, Flour, Panko Breadcrumbs, Canola Oil, Salt, Pepper",
+						"price": 24,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": ["spicy"]
+					}
+				],
+				"hours": 12,
+				"rating": 2,
+				"isChefNew": true,
+				"address": "Mikve Israel St 8, Tel Aviv-Yafo"
+			}
+		]
+	},
+	{
+		"name": "Omer Miller",
+		"portrait": "/assets/Chefs/eyalShani.svg",
+		"isChefOfTheWeek": false,
+		"isChefNew": true,
+		"about": "",
+		"restaurants": [
+			{
+				"name": "calypso",
+				"img": "/assets/restaurants/claro.svg",
+				"dishes": [
+					{
+						"name": "Grilled Ribeye Steak",
+						"ingredients": "ribeye steak, salt, pepper, olive oil, garlic, rosemary",
+						"price": 32,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": true,
+						"type": ["vegan"]
+					},
+					{
+						"name": "Pan-Seared Salmon",
+						"ingredients": "salmon fillet, lemon, thyme, butter, salt, pepper",
+						"price": 25,
+						"image": "/assets/restaurants/claro.svg",
+						"isSignatureDish": false,
+						"type": []
+					}
+				],
+				"hours": 8,
+				"rating": 1,
+				"isChefNew": true,
+				"address": "Mikve Israel St 8, Tel Aviv-Yafo"
+			}
+		]
+	}
+]
