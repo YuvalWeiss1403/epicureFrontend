@@ -39,15 +39,18 @@ const DishModal: React.FC<IDishId> = (props: IDishId) => {
 
 	const deleteDish = async () => {
 		try {
-			const response = await fetch("http://localhost:8000/dishes", {
-				method: "DELETE",
-				body: JSON.stringify({
-					_id: dishId,
-				}),
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-			});
+			const response = await fetch(
+				"https://epicure-server-z5p7.onrender.com/dishes",
+				{
+					method: "DELETE",
+					body: JSON.stringify({
+						_id: dishId,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
 			const data = await response.json();
 			if (!response.ok) {
 				throw new Error(data.message);

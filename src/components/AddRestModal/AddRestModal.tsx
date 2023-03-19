@@ -50,24 +50,27 @@ const AddRestModal: React.FC<IRestId> = (props: IRestId) => {
 
 	const AddRestToDb = async () => {
 		try {
-			const response = await fetch("http://localhost:8000/restaurants", {
-				method: "POST",
-				body: JSON.stringify({
-					name: rest.name,
-					address: rest.address,
-					chef: rest.chef,
-					openHours: rest.openHours,
-					openDays: rest.openDays,
-					openYear: rest.openYear,
-					img: rest.img,
-					rating: rest.rating,
-					popular: rest.popular,
-					newRest: rest.newRest,
-				}),
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-			});
+			const response = await fetch(
+				"https://epicure-server-z5p7.onrender.com/restaurants",
+				{
+					method: "POST",
+					body: JSON.stringify({
+						name: rest.name,
+						address: rest.address,
+						chef: rest.chef,
+						openHours: rest.openHours,
+						openDays: rest.openDays,
+						openYear: rest.openYear,
+						img: rest.img,
+						rating: rest.rating,
+						popular: rest.popular,
+						newRest: rest.newRest,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
 			const data = await response.json();
 			if (!response.ok) {
 				throw new Error(data.message);

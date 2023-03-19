@@ -3,9 +3,12 @@ import { IChefs } from "../../components/Chefs/Chefs";
 
 const chefData = async () => {
 	try {
-		const response = await fetch("http://localhost:8000/chefs", {
-			method: "GET",
-		});
+		const response = await fetch(
+			"https://epicure-server-z5p7.onrender.com/chefs",
+			{
+				method: "GET",
+			}
+		);
 		const allData = await response.json();
 		const data = allData.data;
 		return data;

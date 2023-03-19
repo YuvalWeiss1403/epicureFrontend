@@ -12,10 +12,13 @@ const LogInPage: React.FC = () => {
 
 	const onLogin = async () => {
 		try {
-			const userReq = await axios.post("http://localhost:8000/users/login", {
-				email: Email,
-				password: Password,
-			});
+			const userReq = await axios.post(
+				"https://epicure-server-z5p7.onrender.com/users/login",
+				{
+					email: Email,
+					password: Password,
+				}
+			);
 			sessionStorage.setItem("user", JSON.stringify(userReq.data));
 			navigator("/");
 		} catch (error: any) {

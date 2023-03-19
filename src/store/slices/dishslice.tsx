@@ -4,9 +4,12 @@ import { IRestaurant } from "../../components/Restaurants/Restaurants";
 
 const restData = async () => {
 	try {
-		const response = await fetch("http://localhost:8000/restaurants", {
-			method: "GET",
-		});
+		const response = await fetch(
+			"https://epicure-server-z5p7.onrender.com/restaurants",
+			{
+				method: "GET",
+			}
+		);
 		const data = await response.json();
 		return data.data;
 	} catch (err) {
@@ -16,9 +19,12 @@ const restData = async () => {
 
 const dishesData = async () => {
 	try {
-		const response = await fetch("http://localhost:8000/dishes", {
-			method: "GET",
-		});
+		const response = await fetch(
+			"https://epicure-server-z5p7.onrender.com/dishes",
+			{
+				method: "GET",
+			}
+		);
 		const data = await response.json();
 		return data.data;
 	} catch (err) {

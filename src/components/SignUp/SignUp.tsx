@@ -24,12 +24,15 @@ const SignUp: React.FC = () => {
 
 	const onSignUp = async () => {
 		try {
-			const userReq = await axios.post("http://localhost:8000/users/", {
-				first_name: User.first_name,
-				last_name: User.last_name,
-				email: User.email,
-				password: User.password,
-			});
+			const userReq = await axios.post(
+				"https://epicure-server-z5p7.onrender.com/users/",
+				{
+					first_name: User.first_name,
+					last_name: User.last_name,
+					email: User.email,
+					password: User.password,
+				}
+			);
 			sessionStorage.setItem("user", JSON.stringify(userReq.data));
 			navigator("/UserInfo");
 		} catch (error: any) {

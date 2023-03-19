@@ -55,15 +55,18 @@ const SingleRestaurantPage: React.FC = () => {
 
 	const deleteRest = async () => {
 		try {
-			const response = await fetch("http://localhost:8000/restaurants", {
-				method: "DELETE",
-				body: JSON.stringify({
-					_id: restaurantId,
-				}),
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-			});
+			const response = await fetch(
+				"https://epicure-server-z5p7.onrender.com/restaurants",
+				{
+					method: "DELETE",
+					body: JSON.stringify({
+						_id: restaurantId,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
 			const data = await response.json();
 			if (!response.ok) {
 				throw new Error(data.message);

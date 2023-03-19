@@ -32,22 +32,25 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 
 	const AddDishToRest = async () => {
 		try {
-			const response = await fetch("http://localhost:8000/dishes", {
-				method: "POST",
-				body: JSON.stringify({
-					name: dish.name,
-					time: dish.time,
-					about: dish.about,
-					price: dish.price,
-					allergan: dish.allergan,
-					img: dish.img,
-					isSignatureDish: dish.isSignatureDish,
-					restId: restaurantId,
-				}),
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-			});
+			const response = await fetch(
+				"https://epicure-server-z5p7.onrender.com/dishes",
+				{
+					method: "POST",
+					body: JSON.stringify({
+						name: dish.name,
+						time: dish.time,
+						about: dish.about,
+						price: dish.price,
+						allergan: dish.allergan,
+						img: dish.img,
+						isSignatureDish: dish.isSignatureDish,
+						restId: restaurantId,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
 			const data = await response.json();
 			if (!response.ok) {
 				throw new Error(data.message);

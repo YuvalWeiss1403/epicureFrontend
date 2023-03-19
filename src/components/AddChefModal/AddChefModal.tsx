@@ -34,21 +34,24 @@ const AddChefModal: React.FC<IRestId> = (props: IRestId) => {
 
 	const AddChefToDb = async () => {
 		try {
-			const response = await fetch("http://localhost:8000/chefs", {
-				method: "POST",
-				body: JSON.stringify({
-					name: chef.name,
-					age: chef.age,
-					img: chef.img,
-					description: chef.description,
-					chefOfTheWeek: chef.chefOfTheWeek,
-					isChefNew: chef.isChefNew,
-					mostViewed: chef.mostViewed,
-				}),
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-			});
+			const response = await fetch(
+				"https://epicure-server-z5p7.onrender.com/chefs",
+				{
+					method: "POST",
+					body: JSON.stringify({
+						name: chef.name,
+						age: chef.age,
+						img: chef.img,
+						description: chef.description,
+						chefOfTheWeek: chef.chefOfTheWeek,
+						isChefNew: chef.isChefNew,
+						mostViewed: chef.mostViewed,
+					}),
+					headers: {
+						"Content-type": "application/json; charset=UTF-8",
+					},
+				}
+			);
 			const data = await response.json();
 			if (!response.ok) {
 				throw new Error(data.message);
