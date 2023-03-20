@@ -7,10 +7,11 @@ import Footer from "../Footer/Footer";
 import SingleRestaurantPageNavBar from "../SingleRestaurantPageNavBar/SingleRestaurantPageNavBar";
 import { RootState } from "../../store/Store";
 import { IRestaurant } from "../Restaurants/Restaurants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { RemoveRest } from "../../store/slices/RestaurantsSlice";
 import AddDishModal from "../AddDishModal/AddDishModal";
+import { AllDishes } from "../../store/slices/dishslice";
 
 const SingleRestaurantPage: React.FC = () => {
 	let { restaurantId } = useParams<string>();

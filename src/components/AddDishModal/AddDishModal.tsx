@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import "./AddDishModal.css";
 import { useNavigate, useParams } from "react-router-dom";
-import { AddDish } from "../../store/slices/dishslice";
+import { AddDish, AllDishes } from "../../store/slices/dishslice";
 
 interface IDishId {
 	closeFunction: Function;
@@ -41,7 +41,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 						time: dish.time,
 						about: dish.about,
 						price: dish.price,
-						icons: dish.icons,
+						icons: dish.icons.slice(1),
 						img: dish.img,
 						isSignatureDish: dish.isSignatureDish,
 						restId: restaurantId,
@@ -56,6 +56,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 				throw new Error(data.message);
 			}
 			dispatch(AddDish(data.data));
+			dispatch(AllDishes());
 			navigator(`/restaurants`);
 		} catch (err) {
 			console.error(err);
@@ -136,7 +137,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 							<input
 								type="checkbox"
 								onChange={() => {
-									setDish({ ...dish, icons: [...dish.icons, "spicy"] });
+									setDish({ ...dish, icons: [...(dish.icons, "spicy")] });
 								}}
 							/>
 							<label>Spicy</label>
