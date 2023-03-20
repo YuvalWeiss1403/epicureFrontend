@@ -19,7 +19,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 		time: [""],
 		about: "",
 		price: 0,
-		allergan: [""],
+		icons: [""],
 		img: "",
 		isSignatureDish: false,
 	};
@@ -41,7 +41,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 						time: dish.time,
 						about: dish.about,
 						price: dish.price,
-						allergan: dish.allergan,
+						icons: dish.icons,
 						img: dish.img,
 						isSignatureDish: dish.isSignatureDish,
 						restId: restaurantId,
@@ -136,7 +136,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 							<input
 								type="checkbox"
 								onChange={() => {
-									setDish({ ...dish, allergan: [...dish.allergan, "spicy"] });
+									setDish({ ...dish, icons: [...dish.icons, "spicy"] });
 								}}
 							/>
 							<label>Spicy</label>
@@ -145,7 +145,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 							<input
 								type="checkbox"
 								onChange={() => {
-									setDish({ ...dish, allergan: [...dish.allergan, "vegan"] });
+									setDish({ ...dish, icons: [...dish.icons, "vegan"] });
 								}}
 							/>
 							<label>Vegan</label>
@@ -156,7 +156,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 								onChange={() => {
 									setDish({
 										...dish,
-										allergan: [...dish.allergan, "vegetarian"],
+										icons: [...dish.icons, "vegetarian"],
 									});
 								}}
 							/>
