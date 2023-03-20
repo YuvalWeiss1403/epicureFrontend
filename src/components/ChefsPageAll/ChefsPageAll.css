@@ -6,6 +6,7 @@
 	gap: 10px;
 	width: 95vw;
 	padding: 0 5% 0 3%;
+	overflow-x: hidden;
 }
 
 .chefs-container img {
@@ -35,7 +36,8 @@
 		overflow: scroll;
 	}
 	.add-chef {
-		top: 121px;
-		left: 9px;
+		top: 100px;
+		right: 9px;
+		left: auto;
 	}
 }
