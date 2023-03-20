@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import { AllChefs } from "../../store/slices/ChefsSlice";
 import { AllRestaurants } from "../../store/slices/RestaurantsSlice";
 import { AllDishes } from "../../store/slices/dishslice";
+import "./Home.css";
 
 const Home: React.FC = () => {
 	const dispatch = useDispatch();
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="home-page">
 			<NavBar />
 			<SearchContainer />
 			<PopularRestaurants />
