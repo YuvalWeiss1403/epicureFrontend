@@ -5,6 +5,7 @@ import RestaurantsFilterBar from "../RestaurantsFilterBar/RestaurantsFilterBar";
 import RestaurantsNavbar from "../RestaurantsNavbar/RestaurantsNavbar";
 import RestaurantsPageAll from "../RestaurantsPageAll/RestaurantsPageAll";
 import { ObjectId } from "mongoose";
+import "./Restaurants.css";
 
 export interface IRestaurant {
 	_id: ObjectId;

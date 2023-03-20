@@ -13,7 +13,6 @@ enum FilterType {
 	New = "RestaurantsNew",
 	MostPopular = "RestaurantsMostPopular",
 	OpenNow = "RestaurantsOpenNow",
-	MapView = "RestaurantsMapView",
 }
 
 const filters = [
@@ -21,7 +20,6 @@ const filters = [
 	{ label: "New", type: FilterType.New },
 	{ label: "Most popular", type: FilterType.MostPopular },
 	{ label: "Open Now", type: FilterType.OpenNow },
-	{ label: "Map view", type: FilterType.MapView },
 ];
 
 const RestaurantsNavbar: React.FC = () => {

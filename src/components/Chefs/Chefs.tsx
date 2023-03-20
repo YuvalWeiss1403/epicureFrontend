@@ -4,6 +4,7 @@ import ChefsNavbar from "../ChefsNavbar/ChefsNavbar";
 import ChefsPageAll from "../ChefsPageAll/ChefsPageAll";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import "./Chefs.css";
 
 export interface IChefs {
 	_id: ObjectId;
