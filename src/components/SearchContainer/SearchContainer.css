@@ -8,6 +8,7 @@
 	height: 400px;
 	align-items: center;
 	justify-content: space-evenly;
+	overflow: hidden;
 }
 
 .search-div {

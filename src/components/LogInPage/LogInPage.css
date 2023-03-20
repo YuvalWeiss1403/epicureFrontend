@@ -104,4 +104,11 @@
 		left: 0;
 		font-size: 30px;
 	}
+	.signIn-page-secondary-heading {
+		width: 90%;
+		text-align: center;
+	}
+	.login-content {
+		height: 440px;
+	}
 }

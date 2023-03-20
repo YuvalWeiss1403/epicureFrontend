@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ChefsPageAll.css";
 import ChefCard from "../ChefCard/ChefCard";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../../store/Store";
 import { IChefs } from "../Chefs/Chefs";
 import AddChefModal from "../AddChefModal/AddChefModal";
@@ -19,7 +19,7 @@ const ChefsPageAll: React.FC = () => {
 	const chefsData = useSelector((state: RootState) => state.chef.value);
 	return (
 		<div className="chefs-container">
-			<button onClick={() => openModal()} className="add-rest">
+			<button onClick={() => openModal()} className="add-chef">
 				Add Chef
 			</button>
 			{chefsData.map((chef: IChefs, index: number) => {

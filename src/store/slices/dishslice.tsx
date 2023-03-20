@@ -53,8 +53,7 @@ export const DishSlice = createSlice({
 		},
 		AllDishesInSingleRestaurant: (state, action) => {
 			const chefRest: IRestaurant[] = restaurants.filter(
-				(rest: IRestaurant) =>
-					rest.chefId.toString() === action.payload.toString()
+				(rest: IRestaurant) => rest.chefId === action.payload
 			);
 			state.value = state.initialValue.filter((dish: IDishes) =>
 				chefRest[0].dishes.includes(dish._id)
