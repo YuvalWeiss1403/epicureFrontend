@@ -57,7 +57,7 @@ const AddDishModal: React.FC<IDishId> = (props: IDishId) => {
 			}
 			dispatch(AddDish(data.data));
 			dispatch(AllDishes());
-			navigator(`/restaurants`);
+			navigator(`/`);
 		} catch (err) {
 			console.error(err);
 			throw err;
